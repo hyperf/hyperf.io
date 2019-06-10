@@ -1,5 +1,5 @@
 {
-  "name": "landing-create-react-app-example",
+  "name": "hyperf",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -16,7 +16,7 @@
   },
   "scripts": {
     "start": "react-app-rewired start",
-    "build": "react-app-rewired build",
+    "build": "react-app-rewired docs",
     "test": "react-app-rewired test",
     "eject": "react-app-rewired eject"
   },

@@ -42,7 +42,7 @@ export default class Home extends React.Component {
     // dva 2.0 样式在组件渲染之后动态加载，导致滚动组件不生效；线上不影响；
     /* 如果不是 dva 2.0 请删除 start */
     if (location.port) {
-      // 样式 build 时间在 200-300ms 之间;
+      // 样式 docs 时间在 200-300ms 之间;
       setTimeout(() => {
         this.setState({
           show: true,
