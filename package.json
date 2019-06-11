@@ -20,8 +20,9 @@
     "build": "react-app-rewired build",
     "test": "react-app-rewired test",
     "eject": "react-app-rewired eject",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "add-domain": "echo \"www.hyperf.io\" > build/CNAME",
+    "predeploy": "react-app-rewired build",
+    "deploy": "npm run add-domain && gh-pages -d build"
   },
   "eslintConfig": {
     "extends": "react-app"
