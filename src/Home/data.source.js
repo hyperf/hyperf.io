@@ -98,7 +98,7 @@ export const Content00DataSource = {
         name: 'title',
         children: (
           <>
-            <p>简单化&nbsp; &nbsp;协程化 &nbsp; 组件化</p>
+            <p>简单化&nbsp;协程化&nbsp;组件化</p>
           </>
         ),
       },
