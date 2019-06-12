@@ -1,6 +1,6 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "Hyperf",
+  "name": "A enterprise-level coroutine PHP framework.",
   "icons": [
     {
       "src": "favicon.ico",
