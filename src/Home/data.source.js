@@ -13,16 +13,23 @@ export const Nav00DataSource = {
         name: 'item0',
         a: {
           children: '开发文档',
-          href: 'https://doc.hyperf.io',
+          href: 'https://hyperf.wiki',
           className: 'jwbwev2ey7-editor_css',
         },
-        className: 'jwbwfgejg3-editor_css',
       },
       {
         name: 'item1',
         a: {
           children: 'Github',
-          href: 'https://github.com/hyperf-cloud/hyperf',
+          href: 'https://github.com/hyperf/hyperf',
+          className: 'jwbwf54e8hn-editor_css',
+        },
+      },
+      {
+        name: 'item1',
+        a: {
+          children: 'Gitee(码云)',
+          href: 'https://gitee.com/hyperf/hyperf',
           className: 'jwbwf54e8hn-editor_css',
         },
       },
@@ -69,7 +76,7 @@ export const Banner30DataSource = {
             <p>快速开始</p>
           </>
         ),
-        href: "https://doc.hyperf.io"
+        href: "https://hyperf.wiki"
       },
       {
         name: 'time',
@@ -310,7 +317,7 @@ export const Content30DataSource = {
             className: 'content3-content',
             children: (
               <>
-                <p>健全的微服务体系，gRPC、JsonRPC、服务发现、熔断，灵活完善</p>
+                <p>健全的微服务体系，gRPC、JSON RPC、服务发现、熔断，灵活完善</p>
               </>
             ),
           },
@@ -420,7 +427,7 @@ export const Footer00DataSource = {
     className: 'copyright',
     children: (
       <>
-        <span>©2019 Hyperf&nbsp;All Rights Reserved</span>
+        <span>©2018-2019 Hyperf&nbsp;All Rights Reserved</span>
       </>
     ),
   },
