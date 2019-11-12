@@ -12,6 +12,22 @@ export const Nav00DataSource = {
       {
         name: 'item0',
         a: {
+          children: '商业支持',
+          href: 'https://www.swoole-cloud.com',
+          className: 'jwbwev2ey7-editor_css',
+        },
+      },
+      {
+        name: 'item0',
+        a: {
+          children: '视频教程',
+          href: 'https://course.swoole-cloud.com/videos/5/new?from=hyperf.io',
+          className: 'jwbwev2ey7-editor_css',
+        },
+      },
+      {
+        name: 'item0',
+        a: {
           children: '开发文档',
           href: 'https://hyperf.wiki',
           className: 'jwbwev2ey7-editor_css',
