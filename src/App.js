@@ -6,7 +6,7 @@ class App extends Component {
     return (
       <div className="App">
         <header className="App-header">
-          <img src="https://hyperf.oss-cn-hangzhou.aliyuncs.com/hyperf.png" className="App-logo" alt="logo" />
+          <img src="https://hyperf.oss-cn-hangzhou.aliyuncs.com/hyperf.png" className="App-logo" alt="hyperf-logo" />
           <p>
             Edit <code>src/App.js</code> and save to reload.
           </p>

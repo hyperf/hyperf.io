@@ -1,4 +1,33 @@
 import React from 'react';
+
+let currentLanguage = 'zh-CN'
+let languages = {
+  'zh-CN': {
+    'bussiness': '商业支持',
+    'video': '视频教程',
+    'doc': '开发文档',
+    'github': 'Github',
+    'gitee': 'Gitee(码云)',
+    'start': '快速开始',
+    'text1': '简单化 协程化 组件化'
+  },
+  'en-US': {
+    'bussiness': 'Commercial Support',
+    'video': 'Video',
+    'doc': 'Documentation',
+    'github': 'Github',
+    'gitee': 'Gitee',
+    'start': 'Get started',
+    'text1': 'Simplification, Coroutines, Componentization'
+  }
+}
+
+if (navigator.language && navigator.language !== 'zh-CN') {
+  currentLanguage = 'en-US'
+}
+
+console.log(currentLanguage)
+
 export const Nav00DataSource = {
   wrapper: { className: 'header0 home-page-wrapper jwbweljfrfi-editor_css' },
   page: { className: 'home-page jwbwg2b25dc-editor_css' },
@@ -12,15 +41,15 @@ export const Nav00DataSource = {
       {
         name: 'item0',
         a: {
-          children: '商业支持',
-          href: 'https://www.swoole-cloud.com',
+          children: languages[currentLanguage]['bussiness'],
+          href: 'https://www.swoole-cloud.com?from=hyperf.io',
           className: 'jwbwev2ey7-editor_css',
         },
       },
       {
         name: 'item0',
         a: {
-          children: '视频教程',
+          children: languages[currentLanguage]['video'],
           href: 'https://course.swoole-cloud.com/videos/5/new?from=hyperf.io',
           className: 'jwbwev2ey7-editor_css',
         },
@@ -28,7 +57,7 @@ export const Nav00DataSource = {
       {
         name: 'item0',
         a: {
-          children: '开发文档',
+          children: languages[currentLanguage]['doc'],
           href: 'https://hyperf.wiki',
           className: 'jwbwev2ey7-editor_css',
         },
@@ -36,7 +65,7 @@ export const Nav00DataSource = {
       {
         name: 'item1',
         a: {
-          children: 'Github',
+          children: languages[currentLanguage]['github'],
           href: 'https://github.com/hyperf/hyperf',
           className: 'jwbwf54e8hn-editor_css',
         },
@@ -44,7 +73,7 @@ export const Nav00DataSource = {
       {
         name: 'item1',
         a: {
-          children: 'Gitee(码云)',
+          children: languages[currentLanguage]['gitee'],
           href: 'https://gitee.com/hyperf/hyperf',
           className: 'jwbwf54e8hn-editor_css',
         },
@@ -88,9 +117,7 @@ export const Banner30DataSource = {
         name: 'button',
         className: 'banner3-button jwbvker8eo-editor_css',
         children: (
-          <>
-            <p>快速开始</p>
-          </>
+          languages[currentLanguage]['start']
         ),
         href: "https://hyperf.wiki"
       },
@@ -120,9 +147,7 @@ export const Content00DataSource = {
       {
         name: 'title',
         children: (
-          <>
-            <p>简单化&nbsp;协程化&nbsp;组件化</p>
-          </>
+          languages[currentLanguage]['text1']
         ),
       },
     ],
@@ -443,7 +468,7 @@ export const Footer00DataSource = {
     className: 'copyright',
     children: (
       <>
-        <span>©2018-2019 Hyperf&nbsp;All Rights Reserved</span>
+        <span>©2018-2020 Hyperf&nbsp;All Rights Reserved</span>
       </>
     ),
   },
