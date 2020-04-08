@@ -69,7 +69,7 @@ let languages = {
 }
 
 if (navigator.language && navigator.language !== 'zh-CN') {
-  let currentLanguage = 'en-US'
+  currentLanguage = 'en-US'
 }
 
 export const Nav00DataSource = {
