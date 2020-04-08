@@ -5,28 +5,72 @@ let languages = {
   'zh-CN': {
     'bussiness': '商业支持',
     'video': '视频教程',
-    'doc': '开发文档',
+    'doc': {
+      'text': '开发文档',
+      'url': 'https://hyperf.wiki'
+    },
     'github': 'Github',
     'gitee': 'Gitee(码云)',
-    'start': '快速开始',
-    'text1': '简单化 协程化 组件化'
+    'start-button': '快速开始',
+    'content00-text1': '简单化 协程化 组件化',
+    'content00-block0-title': '开箱即用，快人一步',
+    'content00-block0-content': '官方提供超多常用组件，随用随取',
+    'content00-block1-title': '原生协程，超高性能',
+    'content00-block1-content': '基于Swoole原生协程，性能强悍',
+    'content00-block2-title': '丰富组件，任意组合',
+    'content00-block2-content': '全组件化设计，可复用于其它框架',
+    'content30-title': '生产级别的协程框架',
+    'content30-content': '由 Swoole 4 原生协程强力驱动',
+    'content30-block0-title': '高性能',
+    'content30-block0-content': '全协程异步实现，性能远超所有传统 PHP-FPM 框架',
+    'content30-block1-title': '生产可用',
+    'content30-block1-content': '经历过长时间生产环境考验的企业级框架设计，稳定可靠',
+    'content30-block2-title': '微服务',
+    'content30-block2-content': '健全的微服务体系，gRPC、JSON RPC、服务发现、熔断，灵活完善',
+    'content30-block3-title': '组件丰富',
+    'content30-block3-content': '全组件化设计，超多常用组件，绝大部分组件均可复用于其它框架',
+    'content30-block4-title': '分布式',
+    'content30-block4-content': '基于相关组件可快速搭建出企业级的分布式系统，极速扩容',
+    'content30-block5-title': '自动化测试',
+    'content30-block5-content': '完备的自动化测试，从开发到生产交付全流程保障',
   },
   'en-US': {
     'bussiness': 'Commercial Support',
     'video': 'Video',
-    'doc': 'Documentation',
+    'doc': {
+      'text': 'Documentation',
+      'url': 'https://hyperf.wiki/#/en/'
+    },
     'github': 'Github',
     'gitee': 'Gitee',
-    'start': 'Get started',
-    'text1': 'Simplification, Coroutines, Componentization'
+    'start-button': 'Get started',
+    'content00-text1': 'Convenient, Concurrent, Composite',
+    'content00-block0-title': 'Productivity Out of Box',
+    'content00-block0-content': 'Just pull in components and start working',
+    'content00-block1-title': 'Native Coroutine',
+    'content00-block1-content': 'Make the most of the cutting-edge swoole engine',
+    'content00-block2-title': 'Plugable Interface',
+    'content00-block2-content': 'Open arms to the vast ecosystem',
+    'content30-title': 'Production-grade coroutine framework',
+    'content30-content': 'Powered by Swoole 4 coroutine',
+    'content30-block0-title': 'High performance',
+    'content30-block0-content': 'Unblocked I/O provides decisive benchmark victory over PHP-FPM',
+    'content30-block1-title': 'Production-ready',
+    'content30-block1-content': 'Battle-tested in the most crucial business environment',
+    'content30-block2-title': 'Microservice',
+    'content30-block2-content': 'Embrace microservice with gRPC, JSON-RPC, service discovery, circuit-breaker, etc',
+    'content30-block3-title': 'Decoupled components',
+    'content30-block3-content': 'Hyperf offers a rich pool of components. Most can be used outside of the framework',
+    'content30-block4-title': 'Distributed',
+    'content30-block4-content': 'Decentralized architecture. Scales up to an unlimited amount of servers',
+    'content30-block5-title': 'Tested',
+    'content30-block5-content': 'Fully Automated tests cover from development to delivery',
   }
 }
 
 if (navigator.language && navigator.language !== 'zh-CN') {
   currentLanguage = 'en-US'
 }
-
-console.log(currentLanguage)
 
 export const Nav00DataSource = {
   wrapper: { className: 'header0 home-page-wrapper jwbweljfrfi-editor_css' },
@@ -57,8 +101,8 @@ export const Nav00DataSource = {
       {
         name: 'item0',
         a: {
-          children: languages[currentLanguage]['doc'],
-          href: 'https://hyperf.wiki',
+          children: languages[currentLanguage]['doc']['text'],
+          href: languages[currentLanguage]['doc']['url'],
           className: 'jwbwev2ey7-editor_css',
         },
       },
@@ -117,9 +161,9 @@ export const Banner30DataSource = {
         name: 'button',
         className: 'banner3-button jwbvker8eo-editor_css',
         children: (
-          languages[currentLanguage]['start']
+          languages[currentLanguage]['start-button']
         ),
-        href: "https://hyperf.wiki"
+        href: languages[currentLanguage]['doc']['url']
       },
       {
         name: 'time',
@@ -147,7 +191,7 @@ export const Content00DataSource = {
       {
         name: 'title',
         children: (
-          languages[currentLanguage]['text1']
+          languages[currentLanguage]['content00-text1']
         ),
       },
     ],
@@ -169,16 +213,12 @@ export const Content00DataSource = {
           title: {
             className: 'content0-title',
             children: (
-              <>
-                <p>开箱即用，快人一步</p>
-              </>
+              languages[currentLanguage]['content00-block0-title']
             ),
           },
           content: {
             children: (
-              <>
-                <p>官方提供超多常用组件，随用随取</p>
-              </>
+              languages[currentLanguage]['content00-block0-content']
             ),
           },
         },
@@ -197,16 +237,12 @@ export const Content00DataSource = {
           title: {
             className: 'content0-title',
             children: (
-              <>
-                <p>原生协程，超高性能</p>
-              </>
+              languages[currentLanguage]['content00-block1-title']
             ),
           },
           content: {
             children: (
-              <>
-                <p>基于Swoole原生协程，性能强悍</p>
-              </>
+              languages[currentLanguage]['content00-block1-content']
             ),
           },
         },
@@ -225,16 +261,12 @@ export const Content00DataSource = {
           title: {
             className: 'content0-title',
             children: (
-              <>
-                <p>丰富组件，任意组合</p>
-              </>
+                languages[currentLanguage]['content00-block1-title']
             ),
           },
           content: {
             children: (
-              <>
-                <p>全组件化设计，可复用于其它框架</p>
-              </>
+                languages[currentLanguage]['content00-block1-content']
             ),
           },
         },
@@ -254,9 +286,7 @@ export const Content30DataSource = {
       {
         name: 'title',
         children: (
-          <>
-            <p>生产级别的协程框架</p>
-          </>
+          languages[currentLanguage]['content30-title']
         ),
         className: 'title-h1',
       },
@@ -264,9 +294,7 @@ export const Content30DataSource = {
         name: 'content',
         className: 'title-content',
         children: (
-          <>
-            <p>由 Swoole 4 原生协程强力驱动</p>
-          </>
+          languages[currentLanguage]['content30-content']
         ),
       },
     ],
@@ -289,17 +317,13 @@ export const Content30DataSource = {
           title: {
             className: 'content3-title',
             children: (
-              <>
-                <p>高性能</p>
-              </>
+                languages[currentLanguage]['content30-block0-title']
             ),
           },
           content: {
             className: 'content3-content',
             children: (
-              <>
-                <p>全协程异步实现，性能远超所有传统 PHP-FPM 框架</p>
-              </>
+                languages[currentLanguage]['content30-block0-content']
             ),
           },
         },
@@ -319,17 +343,13 @@ export const Content30DataSource = {
           title: {
             className: 'content3-title',
             children: (
-              <>
-                <p>生产可用</p>
-              </>
+                languages[currentLanguage]['content30-block1-title']
             ),
           },
           content: {
             className: 'content3-content',
             children: (
-              <>
-                <p>经历过长时间生产环境考验的企业级框架设计，稳定可靠</p>
-              </>
+                languages[currentLanguage]['content30-block1-content']
             ),
           },
         },
@@ -349,17 +369,13 @@ export const Content30DataSource = {
           title: {
             className: 'content3-title',
             children: (
-              <>
-                <p>微服务</p>
-              </>
+              languages[currentLanguage]['content30-block2-title']
             ),
           },
           content: {
             className: 'content3-content',
             children: (
-              <>
-                <p>健全的微服务体系，gRPC、JSON RPC、服务发现、熔断，灵活完善</p>
-              </>
+                languages[currentLanguage]['content30-block2-content']
             ),
           },
         },
@@ -379,19 +395,13 @@ export const Content30DataSource = {
           title: {
             className: 'content3-title',
             children: (
-              <>
-                <p>组件丰富</p>
-              </>
+              languages[currentLanguage]['content30-block3-title']
             ),
           },
           content: {
             className: 'content3-content',
             children: (
-              <>
-                <p>
-                  全组件化设计，超多常用组件，绝大部分组件均可复用于其它框架
-                </p>
-              </>
+                languages[currentLanguage]['content30-block3-content']
             ),
           },
         },
@@ -411,17 +421,13 @@ export const Content30DataSource = {
           title: {
             className: 'content3-title',
             children: (
-              <>
-                <p>分布式</p>
-              </>
+              languages[currentLanguage]['content30-block4-title']
             ),
           },
           content: {
             className: 'content3-content',
             children: (
-              <>
-                <p>基于相关组件可快速搭建出企业级的分布式系统，极速扩容</p>
-              </>
+                languages[currentLanguage]['content30-block4-content']
             ),
           },
         },
@@ -441,17 +447,13 @@ export const Content30DataSource = {
           title: {
             className: 'content3-title',
             children: (
-              <>
-                <p>自动化测试</p>
-              </>
+              languages[currentLanguage]['content30-block5-title']
             ),
           },
           content: {
             className: 'content3-content',
             children: (
-              <>
-                <p>完备的自动化测试，从开发到生产交付全流程保障</p>
-              </>
+              languages[currentLanguage]['content30-block5-content']
             ),
           },
         },
