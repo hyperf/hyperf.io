@@ -261,12 +261,12 @@ export const Content00DataSource = {
           title: {
             className: 'content0-title',
             children: (
-                languages[currentLanguage]['content00-block1-title']
+                languages[currentLanguage]['content00-block2-title']
             ),
           },
           content: {
             children: (
-                languages[currentLanguage]['content00-block1-content']
+                languages[currentLanguage]['content00-block2-content']
             ),
           },
         },
