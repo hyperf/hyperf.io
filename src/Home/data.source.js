@@ -3,7 +3,6 @@ import React from 'react';
 let currentLanguage = 'zh-CN'
 let languages = {
   'zh-CN': {
-    'bussiness': '商业支持',
     'video': '视频教程',
     'doc': {
       'text': '开发文档',
@@ -16,7 +15,7 @@ let languages = {
     'content00-block0-title': '开箱即用，快人一步',
     'content00-block0-content': '官方提供超多常用组件，随用随取',
     'content00-block1-title': '原生协程，超高性能',
-    'content00-block1-content': '基于Swoole原生协程，性能强悍',
+    'content00-block1-content': '原生协程能力支持，性能强悍',
     'content00-block2-title': '丰富组件，任意组合',
     'content00-block2-content': '全组件化设计，可复用于其它框架',
     'content30-title': '生产级别的协程框架',
@@ -35,7 +34,6 @@ let languages = {
     'content30-block5-content': '完备的自动化测试，从开发到生产交付全流程保障',
   },
   'en-US': {
-    'bussiness': 'Commercial Support',
     'video': 'Video',
     'doc': {
       'text': 'Documentation',
@@ -85,16 +83,8 @@ export const Nav00DataSource = {
       {
         name: 'item0',
         a: {
-          children: languages[currentLanguage]['bussiness'],
-          href: 'https://www.swoole-cloud.com?from=hyperf.io',
-          className: 'jwbwev2ey7-editor_css',
-        },
-      },
-      {
-        name: 'item0',
-        a: {
           children: languages[currentLanguage]['video'],
-          href: 'https://course.swoole-cloud.com/videos/5/new?from=hyperf.io',
+          href: 'https://course.swoole-cloud.com/videos/5/hot?from=hyperf.io',
           className: 'jwbwev2ey7-editor_css',
         },
       },
