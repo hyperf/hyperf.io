@@ -460,7 +460,7 @@ export const Footer00DataSource = {
     className: 'copyright',
     children: (
       <>
-        <span>©2018-2020 Hyperf&nbsp;All Rights Reserved</span>
+        <span>©2018-2021 Hyperf&nbsp;All Rights Reserved</span>
       </>
     ),
   },
