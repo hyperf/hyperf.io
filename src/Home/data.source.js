@@ -8,7 +8,7 @@ let languages = {
       'text': '开发文档',
       'url': 'https://hyperf.wiki'
     },
-    'github': 'Github',
+    'github': 'GitHub',
     'gitee': 'Gitee(码云)',
     'start-button': '快速开始',
     'content00-text1': '简单化 协程化 组件化',
@@ -39,7 +39,7 @@ let languages = {
       'text': 'Documentation',
       'url': 'https://hyperf.wiki/#/en/'
     },
-    'github': 'Github',
+    'github': 'GitHub',
     'gitee': 'Gitee',
     'start-button': 'Get started',
     'content00-text1': 'Convenient, Concurrent, Composite',
@@ -84,7 +84,7 @@ export const Nav00DataSource = {
         name: 'item0',
         a: {
           children: languages[currentLanguage]['video'],
-          href: 'https://course.swoole-cloud.com/videos/5/hot?from=hyperf.io',
+          href: 'https://space.bilibili.com/1176880220/channel/seriesdetail?sid=2121560',
           className: 'jwbwev2ey7-editor_css',
         },
       },
@@ -460,7 +460,7 @@ export const Footer00DataSource = {
     className: 'copyright',
     children: (
       <>
-        <span>©2018-2022 Hyperf&nbsp;All Rights Reserved</span>
+        <span>©2018-2023 Hyperf&nbsp;All Rights Reserved</span>
       </>
     ),
   },
