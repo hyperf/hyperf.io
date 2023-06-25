@@ -8,7 +8,7 @@ let languages = {
       'text': '开发文档',
       'url': 'https://hyperf.wiki'
     },
-    'github': 'Github',
+    'github': 'GitHub',
     'gitee': 'Gitee(码云)',
     'start-button': '快速开始',
     'content00-text1': '简单化 协程化 组件化',
@@ -39,7 +39,7 @@ let languages = {
       'text': 'Documentation',
       'url': 'https://hyperf.wiki/#/en/'
     },
-    'github': 'Github',
+    'github': 'GitHub',
     'gitee': 'Gitee',
     'start-button': 'Get started',
     'content00-text1': 'Convenient, Concurrent, Composite',
