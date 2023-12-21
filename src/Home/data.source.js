@@ -8,7 +8,7 @@ let languages = {
       'text': '开发文档',
       'url': 'https://hyperf.wiki'
     },
-    'discussions': "Discussions",
+    'discussions': "论坛",
     'github': 'GitHub',
     'gitee': 'Gitee(码云)',
     'start-button': '快速开始',
