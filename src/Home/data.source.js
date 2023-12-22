@@ -8,6 +8,7 @@ let languages = {
       'text': '开发文档',
       'url': 'https://hyperf.wiki'
     },
+    'discussions': "论坛",
     'github': 'GitHub',
     'gitee': 'Gitee(码云)',
     'start-button': '快速开始',
@@ -39,6 +40,7 @@ let languages = {
       'text': 'Documentation',
       'url': 'https://hyperf.wiki/#/en/'
     },
+    'discussions': "Discussions",
     'github': 'GitHub',
     'gitee': 'Gitee',
     'start-button': 'Get started',
@@ -94,6 +96,14 @@ export const Nav00DataSource = {
           children: languages[currentLanguage]['doc']['text'],
           href: languages[currentLanguage]['doc']['url'],
           className: 'jwbwev2ey7-editor_css',
+        },
+      },
+      {
+        name: 'item1',
+        a: {
+          children: languages[currentLanguage]['discussions'],
+          href: 'https://github.com/orgs/hyperf/discussions',
+          className: 'jwbwf54e8hn-editor_css',
         },
       },
       {
