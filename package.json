@@ -4,7 +4,7 @@
   "homepage": "https://www.hyperf.io",
   "private": true,
   "dependencies": {
-    "antd": "^3.14.1",
+    "antd": "^5.1.6",
     "enquire-js": "^0.2.1",
     "rc-banner-anim": "^2.2.2",
     "rc-queue-anim": "^1.6.12",
