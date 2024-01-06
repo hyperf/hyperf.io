@@ -26,7 +26,7 @@ let languages = {
     'content30-block1-title': '生产可用',
     'content30-block1-content': '经历过长时间生产环境考验的企业级框架设计，稳定可靠',
     'content30-block2-title': '微服务',
-    'content30-block2-content': '健全的微服务体系，gRPC、JSON RPC、服务发现、熔断，分布式事务',
+    'content30-block2-content': '健全的微服务体系，gRPC、JSON RPC、多路复用、服务发现、熔断，分布式事务',
     'content30-block3-title': '组件丰富',
     'content30-block3-content': '全组件化设计，超多常用组件，绝大部分组件均可复用于其它框架',
     'content30-block4-title': '分布式',
